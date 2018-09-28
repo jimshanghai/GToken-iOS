@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SuccessViewController" customModule="edc_wallet_swift" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="mV1-du-C9d">
+                    <rect key="frame" x="135" y="177" width="104" height="113"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="113" id="HyN-Ez-445"/>
+                        <constraint firstAttribute="width" constant="104" id="P3A-Ea-ebg"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JXC-ki-rKM">
+                    <rect key="frame" x="55" y="310" width="265" height="61"/>
+                    <constraints>
+                        <constraint firstAttribute="height" priority="21" constant="21" id="MAy-TG-NFA"/>
+                        <constraint firstAttribute="width" constant="265" id="lsM-eu-rTw"/>
+                    </constraints>
+                    <attributedString key="attributedText">
+                        <fragment content="Transaction being processed, please check the transaction details later">
+                            <attributes>
+                                <color key="NSColor" red="0.35294117650000001" green="0.52549019610000003" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <font key="NSFont" metaFont="system" size="17"/>
+                            </attributes>
+                        </fragment>
+                    </attributedString>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iSX-V1-7xw">
+                    <rect key="frame" x="30" y="471" width="315" height="48"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="48" id="9oR-kB-cPR"/>
+                        <constraint firstAttribute="width" constant="315" id="Up9-0P-d8Y"/>
+                    </constraints>
+                    <state key="normal" title="OK" backgroundImage="Rectangle 5 Copy 4">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="okAction:" destination="-1" eventType="touchUpInside" id="XSl-60-cLg"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="JXC-ki-rKM" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="3NJ-ne-Khv"/>
+                <constraint firstItem="mV1-du-C9d" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="4XC-P7-ANU"/>
+                <constraint firstItem="iSX-V1-7xw" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="JEE-gQ-GUD"/>
+                <constraint firstItem="iSX-V1-7xw" firstAttribute="top" secondItem="JXC-ki-rKM" secondAttribute="bottom" constant="100" id="Jkq-yV-X0f"/>
+                <constraint firstItem="mV1-du-C9d" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" constant="-100" id="LCF-MR-l8g"/>
+                <constraint firstItem="JXC-ki-rKM" firstAttribute="top" secondItem="mV1-du-C9d" secondAttribute="bottom" constant="20" id="zCI-PP-JKT"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Rectangle 5 Copy 4" width="315" height="48"/>
+        <image name="logo" width="135" height="144"/>
+    </resources>
+</document>

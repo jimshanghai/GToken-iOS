@@ -1,0 +1,33 @@
+
+/* Class = "UILabel"; text = "补充说明(限100以内)"; ObjectID = "31e-dU-4Dx"; */
+"31e-dU-4Dx.text" = "补充说明(限30以内)";
+
+/* Class = "UIButton"; normalTitle = "下一步"; ObjectID = "8uQ-9m-Ivn"; */
+"8uQ-9m-Ivn.normalTitle" = "下一步";
+
+/* Class = "UILabel"; text = "-------"; ObjectID = "9Wu-cX-xda"; */
+"9Wu-cX-xda.text" = "-------";
+
+/* Class = "UILabel"; text = "可用余额:4.25个"; ObjectID = "BrD-ad-di6"; */
+"BrD-ad-di6.text" = "可用余额:--";
+
+/* Class = "UILabel"; text = "- - - "; ObjectID = "I6Q-Gr-ePS"; */
+"I6Q-Gr-ePS.text" = "- - - ";
+
+/* Class = "UILabel"; text = "选择需要转账的Token"; ObjectID = "QBS-6N-STT"; */
+"QBS-6N-STT.text" = "选择需要转账的Token";
+
+/* Class = "UILabel"; text = "转出数量"; ObjectID = "Sto-vw-PSB"; */
+"Sto-vw-PSB.text" = "转出数量";
+
+/* Class = "UILabel"; text = "- - - "; ObjectID = "U8d-J2-zeg"; */
+"U8d-J2-zeg.text" = "- - - ";
+
+/* Class = "UIButton"; normalTitle = "取消"; ObjectID = "VLD-4e-N04"; */
+"VLD-4e-N04.normalTitle" = "取消";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "Vgr-Zs-7Zl"; */
+"Vgr-Zs-7Zl.normalTitle" = "Button";
+
+/* Class = "UITextField"; placeholder = "请输入转给对方的token数量"; ObjectID = "gQz-Xt-ysD"; */
+"gQz-Xt-ysD.placeholder" = "请输入转给对方的token数量";

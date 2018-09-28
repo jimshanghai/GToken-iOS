@@ -1,0 +1,30 @@
+
+/* Class = "UITextField"; placeholder = "请输入对方账号输入对方钱包地址"; ObjectID = "91r-3l-2d2"; */
+"91r-3l-2d2.placeholder" = "请输入对方账号输入对方钱包地址";
+
+/* Class = "UILabel"; text = "可用余额:4.25个"; ObjectID = "Hdr-Yq-G2J"; */
+"Hdr-Yq-G2J.text" = "可用余额:4.25个";
+
+/* Class = "UILabel"; text = "补充说明(限100以内)"; ObjectID = "Hrg-hp-yfO"; */
+"Hrg-hp-yfO.text" = "补充说明(限100以内)";
+
+/* Class = "UILabel"; text = "转出数量"; ObjectID = "KJy-Ij-Wyh"; */
+"KJy-Ij-Wyh.text" = "转出数量";
+
+/* Class = "UILabel"; text = "输入对方的用户账户或对方钱包地址"; ObjectID = "Mby-o4-f64"; */
+"Mby-o4-f64.text" = "输入对方的用户账户或对方钱包地址";
+
+/* Class = "UITextField"; placeholder = "请输入转给对方的token数量"; ObjectID = "P0p-FR-Dir"; */
+"P0p-FR-Dir.placeholder" = "请输入转给对方的token数量";
+
+/* Class = "UIButton"; normalTitle = "下一步"; ObjectID = "Sbc-5V-B0y"; */
+"Sbc-5V-B0y.normalTitle" = "下一步";
+
+/* Class = "UIButton"; normalTitle = "取消"; ObjectID = "UML-WX-cA6"; */
+"UML-WX-cA6.normalTitle" = "取消";
+
+/* Class = "UILabel"; text = "对方账号输入有误,请重新输入!"; ObjectID = "njp-BG-Iby"; */
+"njp-BG-Iby.text" = "对方账号输入有误,请重新输入!";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "u9W-lD-mdS"; */
+"u9W-lD-mdS.normalTitle" = "Button";

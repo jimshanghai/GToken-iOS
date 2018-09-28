@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="HeaderView" customModule="edc_wallet_swift" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="198"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="E47-b7-yfw">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="198"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="余额" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c72-2K-f48">
+                    <rect key="frame" x="170.5" y="132" width="35" height="18"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="35" id="V1v-ez-qWv"/>
+                        <constraint firstAttribute="height" constant="18" id="YrO-0H-Zjl"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="缺省头像" translatesAutoresizingMaskIntoConstraints="NO" id="vS3-bK-3Cj">
+                    <rect key="frame" x="158" y="65" width="59" height="59"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="59" id="ak9-gN-4Fy"/>
+                        <constraint firstAttribute="height" constant="59" id="hUb-Fv-7Mj"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1000" verticalHuggingPriority="251" text="-.----个" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YqR-6f-fdI">
+                    <rect key="frame" x="97" y="160" width="180" height="18"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="18" id="1cP-ny-ND3"/>
+                        <constraint firstAttribute="width" constant="180" id="E1p-c5-tci"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="vS3-bK-3Cj" firstAttribute="centerX" secondItem="E47-b7-yfw" secondAttribute="centerX" id="HXo-w5-6Ch"/>
+                <constraint firstItem="E47-b7-yfw" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="X1A-SB-kL8"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="YqR-6f-fdI" secondAttribute="bottom" constant="20" id="Xac-ZG-YIw"/>
+                <constraint firstItem="c72-2K-f48" firstAttribute="centerX" secondItem="E47-b7-yfw" secondAttribute="centerX" id="gnN-d5-6zP"/>
+                <constraint firstItem="YqR-6f-fdI" firstAttribute="centerX" secondItem="E47-b7-yfw" secondAttribute="centerX" id="l36-M8-AAW"/>
+                <constraint firstItem="YqR-6f-fdI" firstAttribute="top" secondItem="c72-2K-f48" secondAttribute="bottom" constant="10" id="lqf-vG-7KO"/>
+                <constraint firstItem="E47-b7-yfw" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="m6d-jf-hkH"/>
+                <constraint firstItem="E47-b7-yfw" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="mA9-kO-cSz"/>
+                <constraint firstItem="E47-b7-yfw" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="s1x-RX-kHC"/>
+                <constraint firstItem="c72-2K-f48" firstAttribute="top" secondItem="vS3-bK-3Cj" secondAttribute="bottom" constant="8" id="s7i-Gm-sKU"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="16.5" y="48"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="bg" width="375" height="150"/>
+        <image name="缺省头像" width="177" height="177"/>
+    </resources>
+</document>

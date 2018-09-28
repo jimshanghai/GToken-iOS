@@ -1,0 +1,15 @@
+
+/* Class = "UILabel"; text = "暂无交易记录"; ObjectID = "Dcz-56-eXz"; */
+"Dcz-56-eXz.text" = "暂无交易记录";
+
+/* Class = "UIButton"; normalTitle = "转出"; ObjectID = "G3a-qd-dlz"; */
+"G3a-qd-dlz.normalTitle" = "转出";
+
+/* Class = "UILabel"; text = "-.----个"; ObjectID = "NTM-Op-5jT"; */
+"NTM-Op-5jT.text" = "-.----";
+
+/* Class = "UILabel"; text = "余额"; ObjectID = "QuK-bk-NSt"; */
+"QuK-bk-NSt.text" = "余额";
+
+/* Class = "UIButton"; normalTitle = "转入"; ObjectID = "tGV-eZ-w4X"; */
+"tGV-eZ-w4X.normalTitle" = "转入";

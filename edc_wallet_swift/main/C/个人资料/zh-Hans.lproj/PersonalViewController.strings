@@ -1,0 +1,15 @@
+
+/* Class = "UILabel"; text = "一禅小师傅"; ObjectID = "9nl-Qe-xJE"; */
+"9nl-Qe-xJE.text" = "一禅小师傅";
+
+/* Class = "UILabel"; text = "88888888888"; ObjectID = "T25-mX-PXE"; */
+"T25-mX-PXE.text" = "--------";
+
+/* Class = "UILabel"; text = "手机号"; ObjectID = "gP4-ll-SWM"; */
+"gP4-ll-SWM.text" = "手机号";
+
+/* Class = "UILabel"; text = "姓名"; ObjectID = "lqu-eQ-PjT"; */
+"lqu-eQ-PjT.text" = "姓名";
+
+/* Class = "UIButton"; normalTitle = "退出登录"; ObjectID = "xYw-1t-BiZ"; */
+"xYw-1t-BiZ.normalTitle" = "退出登录";

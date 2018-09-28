@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ContactViewController" customModule="edc_wallet_swift" customModuleProvider="target">
+            <connections>
+                <outlet property="table" destination="uE7-ha-8IQ" id="Wrz-dU-PVy"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="暂无联系人" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WfQ-RO-oRf">
+                    <rect key="frame" x="124" y="278" width="72" height="17"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="72" id="RPn-mf-Bgp"/>
+                        <constraint firstAttribute="height" constant="17" id="cvV-5T-c84"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" red="0.46274509800000002" green="0.46274509800000002" blue="0.46274509800000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="无联系人" translatesAutoresizingMaskIntoConstraints="NO" id="jAb-6j-buI">
+                    <rect key="frame" x="98" y="195" width="123" height="78"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="78" id="NHV-GX-Kab"/>
+                        <constraint firstAttribute="width" constant="123" id="QxB-b3-Vri"/>
+                    </constraints>
+                </imageView>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="uE7-ha-8IQ">
+                    <rect key="frame" x="0.0" y="20" width="320" height="548"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="sQh-on-Hed"/>
+                        <outlet property="delegate" destination="-1" id="UoG-80-CfM"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="uE7-ha-8IQ" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="0Xj-cD-lSB"/>
+                <constraint firstItem="jAb-6j-buI" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" constant="-50" id="54f-tr-Ws7"/>
+                <constraint firstItem="uE7-ha-8IQ" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="7Z0-H0-1kJ"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="uE7-ha-8IQ" secondAttribute="trailing" id="DoX-hC-vmO"/>
+                <constraint firstItem="WfQ-RO-oRf" firstAttribute="centerX" secondItem="jAb-6j-buI" secondAttribute="centerX" id="F7q-Il-ss8"/>
+                <constraint firstItem="jAb-6j-buI" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="XyC-pu-2pY"/>
+                <constraint firstItem="uE7-ha-8IQ" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="hfe-yd-dOa"/>
+                <constraint firstItem="WfQ-RO-oRf" firstAttribute="top" secondItem="jAb-6j-buI" secondAttribute="bottom" constant="5" id="sKd-LI-haw"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="无联系人" width="272" height="173"/>
+    </resources>
+</document>

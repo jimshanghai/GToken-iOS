@@ -1,0 +1,6 @@
+framework module Pods_edc_wallet_swift {
+  umbrella header "Pods-edc_wallet_swift-umbrella.h"
+
+  export *
+  module * { export * }
+}

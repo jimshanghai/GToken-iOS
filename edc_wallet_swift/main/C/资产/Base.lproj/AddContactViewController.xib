@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AddContactViewController" customModule="edc_wallet_swift" customModuleProvider="target">
+            <connections>
+                <outlet property="name" destination="4c9-5w-Xsh" id="FEK-jt-mgD"/>
+                <outlet property="number" destination="6Ec-wp-9Uv" id="UAX-gZ-VfG"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="   请输入用户账号" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6Ec-wp-9Uv">
+                    <rect key="frame" x="18" y="76" width="270" height="30"/>
+                    <color key="backgroundColor" red="0.97254901959999995" green="0.97647058819999999" blue="0.99215686270000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="n5R-RW-jGZ"/>
+                    </constraints>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <textInputTraits key="textInputTraits"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="b2e-S5-eT2"/>
+                    </connections>
+                </textField>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="用户备注(30字以内)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9af-aH-eO7">
+                    <rect key="frame" x="20" y="128" width="145.5" height="16"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="16" id="GtW-Tw-aue"/>
+                        <constraint firstAttribute="width" priority="125" constant="125" id="UBX-Nz-jAA"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4c9-5w-Xsh">
+                    <rect key="frame" x="18" y="153" width="270" height="80"/>
+                    <color key="backgroundColor" red="0.97621077300000003" green="0.98017436270000002" blue="0.99664384130000006" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="80" id="lM9-EG-Nx4"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="jkU-pq-aPL"/>
+                    </connections>
+                </textView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="用户账号" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FNm-1n-sXJ">
+                    <rect key="frame" x="20" y="50" width="69.5" height="16"/>
+                    <constraints>
+                        <constraint firstAttribute="width" priority="54" constant="54" id="an3-jg-VOq"/>
+                        <constraint firstAttribute="height" constant="16" id="sb7-zd-0G3"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Ql-rK-raK">
+                    <rect key="frame" x="18" y="295" width="270" height="48"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="48" id="Jip-lR-rMJ"/>
+                    </constraints>
+                    <state key="normal" title="确认添加" backgroundImage="Rectangle 5 Copy 4">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="addAction:" destination="-1" eventType="touchUpInside" id="Ow6-tK-Pwg"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="4c9-5w-Xsh" secondAttribute="trailing" constant="32" id="H7D-gK-qTE"/>
+                <constraint firstItem="6Ec-wp-9Uv" firstAttribute="top" secondItem="FNm-1n-sXJ" secondAttribute="bottom" constant="10" id="KrC-SE-Bmb"/>
+                <constraint firstItem="9Ql-rK-raK" firstAttribute="top" secondItem="4c9-5w-Xsh" secondAttribute="bottom" constant="62" id="O3W-oL-b3e"/>
+                <constraint firstItem="9af-aH-eO7" firstAttribute="top" secondItem="6Ec-wp-9Uv" secondAttribute="bottom" constant="22" id="VNg-zL-hVT"/>
+                <constraint firstItem="9af-aH-eO7" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="a0s-N5-MrS"/>
+                <constraint firstItem="4c9-5w-Xsh" firstAttribute="top" secondItem="9af-aH-eO7" secondAttribute="bottom" constant="9" id="dgR-Xj-f0z"/>
+                <constraint firstItem="9Ql-rK-raK" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="18" id="gFf-Hn-T2h"/>
+                <constraint firstItem="FNm-1n-sXJ" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="30" id="gkK-M0-TfG"/>
+                <constraint firstItem="FNm-1n-sXJ" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="lMS-XM-ehQ"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="6Ec-wp-9Uv" secondAttribute="trailing" constant="32" id="sUR-MM-Uhe"/>
+                <constraint firstItem="6Ec-wp-9Uv" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="18" id="tkr-IR-EMN"/>
+                <constraint firstItem="4c9-5w-Xsh" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="18" id="uNr-4p-LIE"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="9Ql-rK-raK" secondAttribute="trailing" constant="32" id="yiS-PC-LN9"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Rectangle 5 Copy 4" width="315" height="48"/>
+    </resources>
+</document>

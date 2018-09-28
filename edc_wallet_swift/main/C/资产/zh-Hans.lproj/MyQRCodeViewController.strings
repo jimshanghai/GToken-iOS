@@ -1,0 +1,12 @@
+
+/* Class = "UILabel"; text = "扫二维码向我转账"; ObjectID = "3LI-zM-VQp"; */
+"3LI-zM-VQp.text" = "扫二维码向我转账";
+
+/* Class = "UILabel"; text = "您的账号"; ObjectID = "bcq-Wc-mPX"; */
+"bcq-Wc-mPX.text" = "您的账号";
+
+/* Class = "UIButton"; normalTitle = "复制账号"; ObjectID = "ifF-PK-3j5"; */
+"ifF-PK-3j5.normalTitle" = "复制账号";
+
+/* Class = "UILabel"; text = "888666777"; ObjectID = "y1Z-zt-LDE"; */
+"y1Z-zt-LDE.text" = "888666777";
